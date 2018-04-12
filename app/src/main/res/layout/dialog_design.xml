@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_layout"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/curved_background"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="33dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_success_check"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dialog_title"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Android is a mobile operating system developed by Google, based on a modified version of the Linux kernel and other open source software and designed primarily for touchscreen mobile devices such as smartphones and tablets."
+            android:textColor="#424242"
+            android:textSize="13dp" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_content"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:id="@+id/ll_perform_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_divider"
+            android:background="@drawable/bottom_curved_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btn_ok"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:text="Cancel"
+                android:textAllCaps="true"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_curved_white"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:text="OK"
+                android:textAllCaps="true"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_progress_layout"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_loading_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/curved_blue"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:text="Success!"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+-->
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/curved_gray"
+        android:gravity="left"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_loading_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/progressbar_dialog"
+            android:fontFamily="serif-monospace"
+            android:gravity="center|left"
+            android:text="Loading...."
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <!-- </RelativeLayout>-->
+
+</RelativeLayout>

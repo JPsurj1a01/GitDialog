@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_show_success_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Show Success Dialog" />
+
+            <Button
+                android:id="@+id/btn_error_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Error Dialog" />
+
+            <Button
+                android:id="@+id/btn_warning_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Warning Dialog" />
+
+            <Button
+                android:id="@+id/btn_information_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Information Dialog" />
+
+            <Button
+                android:id="@+id/btn_progress_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Progress Dialog" />
+
+            <Button
+                android:id="@+id/btn_simple_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:text="Simple Dialog" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
