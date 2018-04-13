@@ -31,7 +31,7 @@ Add it in your root build.gradle at the end of repositories:
   
   For a dialog implement below code which can be modified by the user accordingly.
   
- > Success Dialog :
+ > Success Dialog 
 ```
  GitDialog sampleAlertDialog = new GitDialog(LaunchActivity.this, GitDialog.SUCCESS_TYPE)
                         .setTitle("Success!")
