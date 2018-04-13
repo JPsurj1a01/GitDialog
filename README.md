@@ -31,15 +31,15 @@ Add it in your root build.gradle at the end of repositories:
   
   For a dialog implement below code which can be modified by the user accordingly.
   
- - Success Dialog :
-  
- ![] (GitDialog sampleAlertDialog = new GitDialog(LaunchActivity.this, GitDialog.SUCCESS_TYPE)
+ > Success Dialog :
+ ''' 
+ GitDialog sampleAlertDialog = new GitDialog(LaunchActivity.this, GitDialog.SUCCESS_TYPE)
                         .setTitle("Success!")
                         .setContentText("This is the demo content to view under the dialog.User can change the dialog content accordingly and manage the several properties like text color,text font style.")
                         .setAnimationTrue(true)
                         .setBackgroundColor(R.color.md_light_green_300);
-                sampleAlertDialog.show();)
-		
+                sampleAlertDialog.show();
+'''		
 - Error Dialog 
 
   GitDialog sampleAlertDialog = new GitDialog(LaunchActivity.this, GitDialog.ERROR_TYPE)
