@@ -71,8 +71,8 @@ Add it in your root build.gradle at the end of repositories:
                         });
                 sampleAlertDialog.show();
 ```		
-- Warning Dialog 
-
+> Warning Dialog 
+```
  GitDialog sampleAlertDialog = new GitDialog(LaunchActivity.this, GitDialog.WARNING_TYPE)
                         .setTitle("Warning!")
                         .setContentText("This is the demo content to view under the dialog.User can change the dialog content accordingly and manage the several properties like text color,text font style.")
@@ -80,11 +80,11 @@ Add it in your root build.gradle at the end of repositories:
                         .setBackgroundColor(R.color.md_amber_300)
                         .setTitleColor(R.color.colorWhite);
                 sampleAlertDialog.show();
-		
+```		
   
   
-- Progress Dialog
-
+> Progress Dialog
+```
   final GitDialog sampleAlertDialog = new GitDialog(LaunchActivity.this, GitDialog.LOADER_TYPE)
                         .setBackgroundColor(R.color.white)
                         .setTitle("Loading please wait...")
@@ -103,5 +103,5 @@ Add it in your root build.gradle at the end of repositories:
                         sampleAlertDialog.dismiss();
                     }
                 }.start();
-		
+```		
 Try it out !		
