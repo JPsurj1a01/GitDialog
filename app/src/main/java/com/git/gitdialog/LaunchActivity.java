@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.gitdialogs.gitdialoglib.GitDialog;
+
 public class LaunchActivity extends AppCompatActivity {
 
     private Button btn_show_success_dialog;

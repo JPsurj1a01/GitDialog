@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GitDialog.iml" filepath="$PROJECT_DIR$/GitDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitdialoglib/gitdialoglib.iml" filepath="$PROJECT_DIR$/gitdialoglib/gitdialoglib.iml" />
     </modules>
   </component>
 </project>

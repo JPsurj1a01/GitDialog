@@ -1,4 +1,4 @@
-package com.git.gitdialog;
+package com.gitdialogs.gitdialoglib;
 
 /**
  * Created by Puja Kumari on 4/5/2018.

@@ -1,4 +1,4 @@
-package com.git.gitdialog;
+package com.gitdialogs.gitdialoglib;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -307,21 +307,21 @@ public class GitDialog extends Dialog implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_ok:
-                if (mConfirmClickListener != null) {
-                    mConfirmClickListener.onClick(this);
-                } else {
-                    dismiss();
-                }
-                break;
-            case R.id.btn_cancel:
-                if (mCancelClickListener != null) {
-                    mCancelClickListener.onClick(this);
-                } else {
-                    dismiss();
-                }
-                break;
+        int i = view.getId();
+        if (i == R.id.btn_ok) {
+            if (mConfirmClickListener != null) {
+                mConfirmClickListener.onClick(this);
+            } else {
+                dismiss();
+            }
+
+        } else if (i == R.id.btn_cancel) {
+            if (mCancelClickListener != null) {
+                mCancelClickListener.onClick(this);
+            } else {
+                dismiss();
+            }
+
         }
     }
 
