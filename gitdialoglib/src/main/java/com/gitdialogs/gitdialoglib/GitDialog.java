@@ -216,28 +216,28 @@ public class GitDialog extends Dialog implements View.OnClickListener {
             switch (mDialogType) {
                 case SUCCESS_TYPE:
                     setDialogLayout();
-                    iv_success_check.setBackground(getContext().getResources().getDrawable(R.drawable.success_check));
+                    iv_success_check.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.success_check));
                     if (mBackgroundColor == 0) {
                         setBackgroundColor(R.color.md_green_200);
                     }
                     break;
                 case ERROR_TYPE:
                     setDialogLayout();
-                    iv_success_check.setBackground(getContext().getResources().getDrawable(R.drawable.error));
+                    iv_success_check.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.error));
                     if (mBackgroundColor == 0) {
                         setBackgroundColor(R.color.md_red_A100);
                     }
                     break;
                 case WARNING_TYPE:
                     setDialogLayout();
-                    iv_success_check.setBackground(getContext().getResources().getDrawable(R.drawable.warning));
+                    iv_success_check.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.warning));
                     if (mBackgroundColor == 0) {
                         setBackgroundColor(R.color.md_amber_400);
                     }
                     break;
                 case INFORMATION_TYPE:
                     setDialogLayout();
-                    iv_success_check.setBackground(getContext().getResources().getDrawable(R.drawable.info));
+                    iv_success_check.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.info));
                     if (mBackgroundColor == 0) {
                         setBackgroundColor(R.color.md_light_blue_200);
                     }
@@ -250,7 +250,7 @@ public class GitDialog extends Dialog implements View.OnClickListener {
                     break;
                 case SIMPLE_DIALOG:
                     setDialogLayout();
-                    iv_success_check.setBackground(null);
+                    iv_success_check.setBackgroundDrawable(null);
                     if (mBackgroundColor == 0) {
                         setBackgroundColor(R.color.md_light_blue_100);
                     }
