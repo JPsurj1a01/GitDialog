@@ -4,6 +4,8 @@ It's a custom dialog with animation and more accessbilities than general
 
 [![](https://jitpack.io/v/JPsurj1a01/GitDialog.svg)](https://jitpack.io/#JPsurj1a01/GitDialog)
 
+[![](https://jitpack.io/v/JPsurj1a01/GitDialog.svg)](https://jitpack.io/#JPsurj1a01/GitDialog)
+
 For implementing this library in your project just implement the below changes :- 
 
 Step 1. Add the JitPack repository to your build file
