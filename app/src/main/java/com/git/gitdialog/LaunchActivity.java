@@ -41,6 +41,7 @@ public class LaunchActivity extends AppCompatActivity {
                         .setTitle("Success!")
                         .setContentText("This is the demo content to view under the dialog.User can change the dialog content accordingly and manage the several properties like text color,text font style.")
                         .setAnimationTrue(true)
+                        .setDialogAnimationTrue(false)
                         .setBackgroundColor(R.color.md_light_green_300);
                 sampleAlertDialog.show();
             }

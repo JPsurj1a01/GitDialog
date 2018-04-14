@@ -59,6 +59,7 @@ public class GitDialog extends Dialog implements View.OnClickListener {
     private OnShowDialogClickListener mConfirmClickListener;
     private String mFontFamily;
     private Handler handler = new Handler();
+    private Boolean mDialogAnimation = true;
 
     public GitDialog(@NonNull Context context, int dialogType) {
         super(context);
@@ -105,6 +106,7 @@ public class GitDialog extends Dialog implements View.OnClickListener {
         showCancelButton(mShowCancelButton);
         setCancelText(mCancelText);
         setContentFontFamily(mFontFamily);
+        setDialogAnimationTrue(mDialogAnimation);
     }
 
     private void onClickListener() {
@@ -144,7 +146,14 @@ public class GitDialog extends Dialog implements View.OnClickListener {
             MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 26);
             animBounce.setInterpolator(interpolator);
             iv_success_check.startAnimation(animBounce);
+            
+        }
+        return this;
+    }
 
+    public GitDialog setDialogAnimationTrue(Boolean dialogAnimationTrue) {
+        mDialogAnimation = dialogAnimationTrue;
+        if (mDialogAnimation != false) {
             getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         }
         return this;
